@@ -13,15 +13,22 @@
 <div class="app">
     <div id="header" class="container">header</div>
     <div id="wrap" class="container">
-        <form method="Get" action="http://training"> 
+        <form method="Get" action="http://localhost"> 
             <input type="text" name="name" placeholder="input name"/>
             <input type="text" name="phone" placeholder="input phone"/>
             <input type="text" name="addr"placeholder="input addr"/>
             <button type="submit">Submit</button>
         </form>
+        <form method="Post" action="http://localhost"> 
+            <input type="text" name="name" placeholder="input name"/>
+            <input type="text" name="phone" placeholder="input phone"/>
+            <input type="date" name="when"placeholder="input when"/>
+            <button type="submit">Submit</button>
+        </form>
         <pre>
         <?php
             print_r($_GET);
+            print_r($_POST);
         ?>
         </pre>
     </div>
